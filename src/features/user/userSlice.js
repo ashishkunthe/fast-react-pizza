@@ -54,7 +54,8 @@ const userSlice = createSlice({
       })
       .addCase(fetchAddress.rejected, (state, action) => {
         state.status = "error";
-        state.error = action.error.message;
+        state.error =
+          "There is issue in getting location make sure to complete this field";
       }),
 });
 
